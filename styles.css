@@ -94,12 +94,36 @@ header {
     text-align: center;
 }
 
-.hero-content h1 {
+.profile-image {
+    margin: 0 auto 1.5rem;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name-english {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 1rem;
-    line-height: 1.3;
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
     color: #1a202c;
+}
+
+.name-chinese {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: #4a5568;
+    font-family: 'STSong', 'SimSun', 'Songti SC', serif;
 }
 
 .hero-description {
@@ -233,18 +257,53 @@ section {
 
 .education-item:last-child {
     border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-.education-item h4 {
-    font-size: 1.1rem;
+.edu-degree {
+    font-size: 1.05rem;
     font-weight: 600;
-    color: #667eea;
-    margin-bottom: 0.5rem;
+    color: #1a202c;
+    margin-bottom: 0.3rem;
 }
 
-.education-item p {
-    color: #555;
-    margin: 0;
+.edu-school {
+    font-size: 0.95rem;
+    color: #2b6cb0;
+    margin-bottom: 0.2rem;
+}
+
+.edu-detail {
+    font-size: 0.9rem;
+    color: #4a5568;
+    margin-bottom: 0.2rem;
+}
+
+.edu-detail a {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+.edu-detail a:hover {
+    text-decoration: underline;
+}
+
+.edu-year {
+    font-size: 0.85rem;
+    color: #718096;
+    font-style: italic;
+}
+
+.about-text a {
+    color: #2b6cb0;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.about-text a:hover {
+    border-bottom-color: #2b6cb0;
 }
 
 .research-interests {
@@ -255,6 +314,18 @@ section {
     font-size: 1.3rem;
     margin-bottom: 1rem;
     color: #333;
+}
+
+.interest-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.interest-item {
+    font-size: 0.95rem;
+    color: #4a5568;
+    line-height: 1.6;
 }
 
 /* Research Section */
@@ -477,12 +548,21 @@ footer p {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .hero-content h1 {
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name-english {
         font-size: 2rem;
     }
 
+    .name-chinese {
+        font-size: 1.5rem;
+    }
+
     .hero-description {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .research-grid {
@@ -511,8 +591,17 @@ footer p {
 }
 
 @media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 2rem;
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name-english {
+        font-size: 1.8rem;
+    }
+
+    .name-chinese {
+        font-size: 1.3rem;
     }
 
     .section-title {
