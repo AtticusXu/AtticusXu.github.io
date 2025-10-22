@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atticus Xu - Personal Website</title>
+    <title>Zhongshu Xu 徐中恕 - Academic Profile</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,12 +12,13 @@
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                    <h2>Atticus Xu</h2>
+                    <h2>Zhongshu Xu</h2>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="hamburger">
@@ -34,14 +35,15 @@
         <section id="home" class="hero">
             <div class="hero-container">
                 <div class="hero-content">
-                    <h1>Hello, I'm <span class="highlight">Atticus Xu</span></h1>
+                    <h1>Zhongshu Xu <span class="chinese-name">徐中恕</span></h1>
                     <p class="hero-description">
-                        A passionate developer and student at The Ohio State University, 
-                        creating innovative solutions and exploring new technologies.
+                        Ph.D. Candidate in Applied Mathematics at The Ohio State University<br>
+                        Specializing in Machine Learning, Scientific Computing, and Digital Twin Technology
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="#research" class="btn btn-primary">Research</a>
+                        <a href="#publications" class="btn btn-secondary">Publications</a>
+                        <a href="https://scholar.google.com/citations?user=MtHS5eIAAAAJ" target="_blank" class="btn btn-tertiary">Google Scholar</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -63,22 +65,43 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>
-                            I'm a student at The Ohio State University with a passion for technology and innovation. 
-                            I enjoy working on projects that challenge me to learn new skills and solve interesting problems.
+                            I am a Ph.D. candidate in Applied Mathematics at The Ohio State University, working under the supervision of 
+                            Prof. Dongbin Xiu. Born in Beijing, China in 1998, I have been passionate about mathematics and computational 
+                            sciences from an early age.
                         </p>
                         <p>
-                            My interests include web development, software engineering, and exploring emerging technologies. 
-                            I'm always eager to collaborate on exciting projects and learn from others in the tech community.
+                            My research focuses on developing innovative machine learning methods for scientific computing, particularly 
+                            in the areas of digital twin technology, function approximation using neural networks, and modeling of 
+                            stochastic dynamical systems. I am interested in bridging the gap between theoretical mathematics and 
+                            practical applications in computational fluid dynamics and data-driven modeling.
                         </p>
-                        <div class="skills">
-                            <h3>Skills & Technologies</h3>
+                        <div class="education">
+                            <h3>Education</h3>
+                            <div class="education-item">
+                                <h4>Ph.D. in Applied Mathematics (In Progress)</h4>
+                                <p><strong>The Ohio State University</strong> | Advisor: Prof. Dongbin Xiu</p>
+                            </div>
+                            <div class="education-item">
+                                <h4>B.S. in Applied Mathematics</h4>
+                                <p><strong>University of Science and Technology of China (USTC) 中国科学技术大学</strong> | Advisor: Prof. Mengping Zhang</p>
+                            </div>
+                            <div class="education-item">
+                                <h4>High School</h4>
+                                <p><strong>The Experimental High School Attached to Beijing Normal University (SDSZ)</strong><br>
+                                北京师范大学附属实验中学</p>
+                            </div>
+                        </div>
+                        <div class="research-interests">
+                            <h3>Research Interests</h3>
                             <div class="skill-tags">
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">HTML/CSS</span>
-                                <span class="skill-tag">React</span>
-                                <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Scientific Computing</span>
+                                <span class="skill-tag">Digital Twin Technology</span>
+                                <span class="skill-tag">Neural Networks</span>
+                                <span class="skill-tag">Stochastic Dynamics</span>
+                                <span class="skill-tag">Computational Fluid Dynamics</span>
+                                <span class="skill-tag">Function Approximation</span>
+                                <span class="skill-tag">Data-Driven Modeling</span>
                             </div>
                         </div>
                     </div>
@@ -86,71 +109,117 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
+        <!-- Research Section -->
+        <section id="research" class="research">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="100" height="100" rx="10" fill="#4f46e5"/>
-                                    <path d="M30 30h40v40H30z" fill="white" opacity="0.2"/>
-                                    <circle cx="50" cy="50" r="15" fill="white"/>
-                                </svg>
-                            </div>
+                <h2 class="section-title">Research Areas</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="60" height="60" rx="8" fill="#667eea"/>
+                                <path d="M15 20h30v20H15z" fill="white" opacity="0.3"/>
+                                <circle cx="30" cy="30" r="8" fill="white"/>
+                                <path d="M22 45h16v2H22z" fill="white"/>
+                            </svg>
                         </div>
-                        <div class="project-content">
-                            <h3>Project One</h3>
-                            <p>A brief description of your first project. Explain what it does and what technologies you used.</p>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
-                            </div>
+                        <div class="research-content">
+                            <h3>Digital Twin Technology</h3>
+                            <p>Developing targeted digital twin systems via flow map learning with applications to fluid dynamics and real-time system monitoring.</p>
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="100" height="100" rx="10" fill="#10b981"/>
-                                    <path d="M25 40h50v30H25z" fill="white" opacity="0.2"/>
-                                    <circle cx="40" cy="55" r="8" fill="white"/>
-                                    <circle cx="60" cy="55" r="8" fill="white"/>
-                                </svg>
-                            </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="60" height="60" rx="8" fill="#10b981"/>
+                                <circle cx="20" cy="20" r="5" fill="white"/>
+                                <circle cx="40" cy="20" r="5" fill="white"/>
+                                <circle cx="30" cy="40" r="5" fill="white"/>
+                                <path d="M20 20L30 40L40 20" stroke="white" stroke-width="2"/>
+                            </svg>
                         </div>
-                        <div class="project-content">
-                            <h3>Project Two</h3>
-                            <p>A brief description of your second project. Highlight the key features and your role in development.</p>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
-                            </div>
+                        <div class="research-content">
+                            <h3>Neural Network Function Approximation</h3>
+                            <p>Designing Chebyshev feature neural networks for accurate function approximation and exploring novel architectural approaches.</p>
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="100" height="100" rx="10" fill="#f59e0b"/>
-                                    <path d="M20 35h60v30H20z" fill="white" opacity="0.2"/>
-                                    <rect x="35" y="45" width="30" height="10" fill="white"/>
-                                </svg>
-                            </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="60" height="60" rx="8" fill="#f59e0b"/>
+                                <path d="M15 25h30v10H15z" fill="white" opacity="0.3"/>
+                                <circle cx="20" cy="30" r="3" fill="white"/>
+                                <circle cx="30" cy="30" r="3" fill="white"/>
+                                <circle cx="40" cy="30" r="3" fill="white"/>
+                                <path d="M15 15h30M15 45h30" stroke="white" stroke-width="2"/>
+                            </svg>
                         </div>
-                        <div class="project-content">
-                            <h3>Project Three</h3>
-                            <p>A brief description of your third project. Mention any challenges you overcame and lessons learned.</p>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-                                <a href="#" class="project-link">GitHub</a>
-                            </div>
+                        <div class="research-content">
+                            <h3>Stochastic Dynamical Systems</h3>
+                            <p>Modeling unknown stochastic dynamical systems via autoencoder architectures and developing data-driven approaches for incomplete data scenarios.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="publications">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div class="publications-list">
+                    <div class="publication-item">
+                        <div class="pub-year">2025</div>
+                        <div class="pub-content">
+                            <h3>Targeted Digital Twin via Flow Map Learning and Its Application to Fluid Dynamics</h3>
+                            <p class="pub-authors">Chen, Q., <strong>Xu, Z.</strong>, Zhang, J., & Xiu, D.</p>
+                            <p class="pub-venue"><em>Journal of Computational Physics (JCP)</em> - To appear</p>
+                        </div>
+                    </div>
+
+                    <div class="publication-item">
+                        <div class="pub-year">2024</div>
+                        <div class="pub-content">
+                            <h3>Chebyshev Feature Neural Network for Accurate Function Approximation</h3>
+                            <p class="pub-authors"><strong>Xu, Z.</strong>, Chen, Y., & Xiu, D.</p>
+                            <p class="pub-venue"><em>Journal of Machine Learning for Modeling and Computing (JMLMC)</em></p>
+                        </div>
+                    </div>
+
+                    <div class="publication-item">
+                        <div class="pub-year">2024</div>
+                        <div class="pub-content">
+                            <h3>Modeling Unknown Stochastic Dynamical Systems via Autoencoder</h3>
+                            <p class="pub-authors"><strong>Xu, Z.</strong>, Chen, Y., Chen, Q., & Xiu, D.</p>
+                            <p class="pub-venue"><em>Journal of Machine Learning for Modeling and Computing (JMLMC)</em></p>
+                        </div>
+                    </div>
+
+                    <div class="publication-item">
+                        <div class="pub-year">2023</div>
+                        <div class="pub-content">
+                            <h3>DNN Modeling of Partial Differential Equations with Incomplete Data</h3>
+                            <p class="pub-authors">Churchill, V., Chen, Y., <strong>Xu, Z.</strong>, & Xiu, D.</p>
+                            <p class="pub-venue"><em>Journal of Computational Physics (JCP)</em></p>
+                        </div>
+                    </div>
+
+                    <div class="publication-item">
+                        <div class="pub-year">2020</div>
+                        <div class="pub-content">
+                            <h3>Butterfly-net2: Simplified Butterfly-Net and Fourier Transform Initialization</h3>
+                            <p class="pub-authors"><strong>Xu, Z.</strong>, Li, Y., & Cheng, X.</p>
+                            <p class="pub-venue"><em>Mathematical and Scientific Machine Learning (MSML)</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scholar-link">
+                    <a href="https://scholar.google.com/citations?user=MtHS5eIAAAAJ" target="_blank" class="btn btn-primary">
+                        View Full Publication List on Google Scholar
+                    </a>
                 </div>
             </div>
         </section>
@@ -158,26 +227,40 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
+                <h2 class="section-title">Contact</h2>
                 <div class="contact-content">
                     <div class="contact-info">
                         <p>
-                            I'm always interested in new opportunities and collaborations. 
-                            Feel free to reach out if you'd like to work together or just say hello!
+                            I am always interested in research collaborations, academic discussions, and opportunities 
+                            in applied mathematics and machine learning. Feel free to reach out for research inquiries 
+                            or academic partnerships.
                         </p>
                         <div class="contact-links">
-                            <a href="mailto:your.email@example.com" class="contact-link">
+                            <a href="mailto:xu.1887@osu.edu" class="contact-link">
                                 <span>📧</span>
-                                Email Me
+                                Email
                             </a>
-                            <a href="https://github.com/AtticusXu" class="contact-link">
-                                <span>💻</span>
-                                GitHub
-                            </a>
-                            <a href="https://linkedin.com/in/yourprofile" class="contact-link">
-                                <span>💼</span>
+                            <a href="https://www.linkedin.com/in/zhongshu-xu-4a9a9127a/" target="_blank" class="contact-link">
+                                <span>�</span>
                                 LinkedIn
                             </a>
+                            <a href="https://scholar.google.com/citations?user=MtHS5eIAAAAJ" target="_blank" class="contact-link">
+                                <span>🎓</span>
+                                Google Scholar
+                            </a>
+                            <a href="https://github.com/AtticusXu" target="_blank" class="contact-link">
+                                <span>�</span>
+                                GitHub
+                            </a>
+                        </div>
+                        <div class="affiliation">
+                            <h3>Current Affiliation</h3>
+                            <p>
+                                <strong>The Ohio State University</strong><br>
+                                Department of Mathematics<br>
+                                Ph.D. Candidate in Applied Mathematics<br>
+                                Advisor: Prof. Dongbin Xiu
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -187,7 +270,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Atticus Xu. All rights reserved.</p>
+            <p>&copy; 2025 Zhongshu Xu 徐中恕. All rights reserved.</p>
         </div>
     </footer>
 

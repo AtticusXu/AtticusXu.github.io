@@ -104,8 +104,10 @@ header {
     line-height: 1.2;
 }
 
-.highlight {
+.chinese-name {
     color: #ffd700;
+    font-size: 0.8em;
+    font-weight: 400;
 }
 
 .hero-description {
@@ -149,6 +151,17 @@ header {
 .btn-secondary:hover {
     background-color: white;
     color: #667eea;
+}
+
+.btn-tertiary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-tertiary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: white;
 }
 
 .hero-image {
@@ -220,70 +233,153 @@ section {
     font-weight: 500;
 }
 
-/* Projects Section */
-.projects-grid {
+/* Education Section */
+.education {
+    margin-top: 2.5rem;
+}
+
+.education h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.education-item p {
+    color: #555;
+    margin: 0;
+}
+
+.research-interests {
+    margin-top: 2.5rem;
+}
+
+.research-interests h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Research Section */
+.research-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.project-card {
+.research-card {
     background: white;
     border-radius: 12px;
-    overflow: hidden;
+    padding: 2rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
-.project-card:hover {
+.research-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-.project-image {
-    height: 200px;
-    background: #f8fafc;
+.research-icon {
+    margin-bottom: 1.5rem;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.project-placeholder {
-    opacity: 0.7;
-}
-
-.project-content {
-    padding: 1.5rem;
-}
-
-.project-content h3 {
+.research-content h3 {
     font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
     color: #333;
 }
 
-.project-content p {
+.research-content p {
     color: #666;
-    margin-bottom: 1.2rem;
     line-height: 1.6;
 }
 
-.project-links {
+/* Publications Section */
+.publications {
+    background-color: #f8fafc;
+}
+
+.publications-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.publication-item {
     display: flex;
-    gap: 1rem;
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-link {
+.publication-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pub-year {
+    flex-shrink: 0;
+    width: 80px;
+    font-size: 1.1rem;
+    font-weight: 600;
     color: #667eea;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    text-align: center;
+    border-right: 2px solid #e2e8f0;
+    padding-right: 1rem;
+    margin-right: 1.5rem;
 }
 
-.project-link:hover {
-    color: #4f46e5;
+.pub-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.pub-authors {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.pub-authors strong {
+    color: #333;
+}
+
+.pub-venue {
+    font-size: 0.9rem;
+    color: #667eea;
+    font-style: italic;
+}
+
+.scholar-link {
+    text-align: center;
+    margin-top: 2rem;
 }
 
 /* Contact Section */
@@ -332,6 +428,27 @@ section {
 
 .contact-link span {
     font-size: 1.2rem;
+}
+
+.affiliation {
+    margin-top: 2rem;
+    text-align: left;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.affiliation h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.affiliation p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Footer */
@@ -395,8 +512,21 @@ footer p {
         font-size: 1.1rem;
     }
 
-    .projects-grid {
+    .research-grid {
         grid-template-columns: 1fr;
+    }
+
+    .publication-item {
+        flex-direction: column;
+    }
+
+    .pub-year {
+        width: auto;
+        border-right: none;
+        border-bottom: 2px solid #e2e8f0;
+        padding: 0 0 0.5rem 0;
+        margin: 0 0 1rem 0;
+        text-align: left;
     }
 
     .contact-links {

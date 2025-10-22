@@ -73,7 +73,7 @@ const observer = new IntersectionObserver(function(entries) {
 
 // Add animation styles to elements
 document.addEventListener('DOMContentLoaded', function() {
-    const animatedElements = document.querySelectorAll('.project-card, .about-content, .contact-content');
+    const animatedElements = document.querySelectorAll('.research-card, .publication-item, .about-content, .contact-content');
     
     animatedElements.forEach(el => {
         el.style.opacity = '0';
