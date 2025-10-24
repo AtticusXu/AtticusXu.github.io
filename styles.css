@@ -427,6 +427,37 @@ section {
     font-style: italic;
 }
 
+.pub-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 4px 10px;
+    background-color: #e2e8f0;
+    color: #2b6cb0;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.pub-link:hover {
+    background-color: #2b6cb0;
+    color: white;
+}
+
+.link-icon {
+    width: 14px;
+    height: 14px;
+}
+
 .scholar-link {
     text-align: center;
     margin-top: 2rem;
