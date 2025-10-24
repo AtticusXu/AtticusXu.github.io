@@ -96,8 +96,8 @@ header {
 
 .profile-image {
     margin: 0 auto 1.5rem;
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -549,8 +549,8 @@ footer p {
     }
 
     .profile-image {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 
     .name-english {
@@ -592,8 +592,8 @@ footer p {
 
 @media (max-width: 480px) {
     .profile-image {
-        width: 120px;
-        height: 120px;
+        width: 160px;
+        height: 160px;
     }
 
     .name-english {
